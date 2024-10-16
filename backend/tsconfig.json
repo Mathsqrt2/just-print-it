@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+    "baseUrl": "src",
+    "outDir": "build/",
+    "sourceMap": true,
+    "noImplicitAny": true
+  },
+  "include": ["./src/**/*"]
+}
