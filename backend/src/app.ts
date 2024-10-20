@@ -1,8 +1,8 @@
 import express from "express";
 import helmet from "helmet";
 import userRoutes from "./routes/user.routes.js";
+import cookieParser from "cookie-parser";
 
-const cookieParser = require("cookie-parser");
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
