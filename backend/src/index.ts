@@ -1,6 +1,6 @@
 import app from "./app.js";
-const port = 2137;
+import config from './config.js';
 
-app.listen(port, () => {
-    console.log(`Server is currently running on port ${port}. Relaunch time: ${new Date().toLocaleString("pl-PL")}`);
+app.listen(config.api.port, () => {
+    console.log(`Server is currently running on port ${config.api.port}. Relaunch time: ${new Date().toLocaleString("pl-PL")}`);
 }); 
