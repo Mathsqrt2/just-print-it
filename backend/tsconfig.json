@@ -1,13 +1,11 @@
 {
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compileOnSave": true,
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ES2020",
-    "baseUrl": "src",
-    "outDir": "build/",
-    "sourceMap": true,
-    "noImplicitAny": true
+    "paths": {
+      "@/*": ["./src/*"],
+      "$/*": ["./*"]
+    }
   },
-  "include": ["./src/**/*"]
+  "exclude": ["node_modules", "dist"]
 }
