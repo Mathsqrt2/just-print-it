@@ -10,7 +10,7 @@
   "lint-staged": {
     "backend/**/*.{js,ts}": [
       "prettier --config backend/.prettierrc --write",
-      "eslint --config backend/.eslintrc.json --fix"
+      "eslint --config backend/eslint.config.js --fix"
     ],
     "frontend/**/*.{js,ts,jsx,tsx}": [
       "prettier --config frontend/.prettierrc --write",
@@ -18,8 +18,15 @@
     ]
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "concurrently": "^9.0.1",
+    "eslint": "^9.13.0",
     "husky": "^9.1.6",
-    "lint-staged": "^15.2.10"
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.10.0",
+    "globals": "^15.11.0",
+    "@eslint/js": "^9.13.0"
   }
 }
