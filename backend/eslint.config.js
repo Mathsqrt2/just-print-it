@@ -7,14 +7,15 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default [
-  { files: ["**/*.{js,mjs,cjs,ts}"] },
   {
+    files: ["**/*.{js,mjs,cjs,ts}"],
     languageOptions: {
       globals: globals.browser,
       parser: "@typescript-eslint/parser",
       parserOptions: {
-        project: "./tsconfig.json",
+        project: path.join(__dirname, "./tsconfig.json"),
         tsconfigRootDir: __dirname,
+        sourceType: "module",
       },
     },
   },
